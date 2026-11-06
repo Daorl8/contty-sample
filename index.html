@@ -1,25 +1,25 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>콘띠 contty | 창원 가로수길 2층 브런치 카페 &amp; 바</title>
-<meta name="description" content="창원 성산구 가로수길 2층, 브런치 카페 &amp; 바 콘띠. 브런치와 커피에서 와인, 브랜디, 전통주까지. 빈티지 가구와 식물, 좋은 음악이 있는 공간. 매일 11:00~23:00, 화요일 휴무." />
+<title>contty 콘띠 | Brunch café &amp; bar · 창원 가로수길 2층</title>
+<meta name="description" content="창원 성산구 가로수길 2층, 브런치 카페 &amp; 바 콘띠. 브런치와 커피에서 와인, 브랜디, 전통주까지. 빈티지 가구와 식물, 좋은 음악이 있는 공간. 11:00~23:00, 화요일 휴무." />
 <link rel="canonical" href="https://contty-sample.lgt3232.workers.dev/" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:site_name" content="콘띠 contty" />
-<meta property="og:title" content="콘띠 · 빠르지 않아도 괜찮은 시간" />
-<meta property="og:description" content="창원 가로수길 2층 브런치 카페 &amp; 바. 커피에서 와인, 브랜디, 전통주까지." />
+<meta property="og:site_name" content="contty 콘띠" />
+<meta property="og:title" content="contty · Take your time." />
+<meta property="og:description" content="Brunch café &amp; bar, 2F · 창원 가로수길 2층. 커피에서 와인, 브랜디, 전통주까지." />
 <meta property="og:url" content="https://contty-sample.lgt3232.workers.dev/" />
 <meta property="og:image" content="https://contty-sample.lgt3232.workers.dev/og-contty.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="theme-color" content="#F4EFE7" />
+<meta name="theme-color" content="#F7F6F3" />
 <link rel="icon" href="favicon.png" type="image/png" />
-<link rel="preload" href="cn-notoserif.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="cn-pretendard.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="cn-dmserif.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="cn-franklin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="cn-window.webp" as="image" />
 <!-- 시안 도메인 = contty-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 치환 -->
 <script type="application/ld+json">
@@ -39,79 +39,86 @@
 }
 </script>
 <style>
-@font-face{ font-family:"CN Head"; font-weight:500; font-display:swap; src:url("cn-notoserif.woff2") format("woff2"); }
-@font-face{ font-family:"CN Label"; font-style:italic; font-weight:400; font-display:swap; src:url("cn-dmserif-italic.woff2") format("woff2"); }
+@font-face{ font-family:"CN Serif"; font-weight:400; font-display:swap; src:url("cn-dmserif.woff2") format("woff2"); }
+@font-face{ font-family:"CN Serif"; font-style:italic; font-weight:400; font-display:swap; src:url("cn-dmserif-italic.woff2") format("woff2"); }
+@font-face{ font-family:"CN Gothic"; font-weight:600; font-display:swap; src:url("cn-franklin.woff2") format("woff2"); }
 @font-face{ font-family:"CN Sans"; font-weight:400 700; font-display:swap; src:url("cn-pretendard.woff2") format("woff2"); }
 
 :root{
-  --cream:#F4EFE7;       /* 매장 벽 · 원목 하단 실측(160,147,136 · 171,147,121)을 밝게 · 실제 공간이 따뜻해 웜 예외 */
-  --cream-2:#EAE3D8;
-  --ink:#2A2420;         /* 13.4:1 */
-  --soft:#665C54;        /* 5.7:1 */
-  --wood:#7A5238;        /* 원목 의자 · 카운터 톤 · 라벨 5.9:1 */
-  --red:#A91E23;         /* 로고 빨강 실측(169,30,35) · 로고 · 채움 버튼에만 · 6.3:1 */
-  --amber:#E0964A;       /* 주황 유리 조명 · 어두운 바탕에서만 (6.3:1) */
-  --check-a:#8E8A84;     /* 체크 바닥 회색 */
-  --check-b:#D3CEC6;
-  --line:#DDD5C9;
-  --dark:#2A2420;
-  --head:"CN Head","CN Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
-  --label:"CN Label","CN Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --paper:#F7F6F3;       /* 깔끔한 오프화이트 (v0.1 크림보다 덜 노랗게) */
+  --paper-2:#EEECE7;
+  --ink:#1C1B1A;         /* 16.9:1 */
+  --soft:#5E5B57;        /* 6.3:1 */
+  --red:#A91E23;         /* 로고 빨강 실측 · 로고 · 채움 버튼 · 대문자 라벨 (6.6:1) */
+  --amber:#E0964A;       /* 주황 유리 조명 · 어두운 푸터에서만 */
+  --check-a:#2E2D2B;     /* 체크 바닥 띠 · 먹 */
+  --check-b:#E4E2DD;
+  --line:#D9D6D0;
+  --dark:#1C1B1A;
+  --serif:"CN Serif","CN Sans",Georgia,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --gothic:"CN Gothic","CN Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --sans:"CN Sans",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --wrap:1160px;
   --r:2px;
 }
 *,*::before,*::after{ box-sizing:border-box; }
 html{ -webkit-text-size-adjust:100%; }
-body{ margin:0; background:var(--cream); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.8; word-break:keep-all; overflow-wrap:break-word; }
+body{ margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.75; word-break:keep-all; overflow-wrap:break-word; }
 img{ max-width:100%; height:auto; display:block; }
 a{ color:inherit; text-decoration:none; }
 h1,h2,h3,p{ margin:0; }
 :focus-visible{ outline:2px solid var(--red); outline-offset:3px; }
 .wrap{ width:min(100% - 40px, var(--wrap)); margin:0 auto; }
 .sec{ padding:96px 0; }
-@media (min-width:900px){ .sec{ padding:140px 0; } }
-.alt{ background:var(--cream-2); }
+@media (min-width:900px){ .sec{ padding:136px 0; } }
+.alt{ background:var(--paper-2); }
 
-.label{ font-family:var(--label); font-style:italic; font-size:1.2rem; line-height:1.3; color:var(--wood); }
-.h2{ margin-top:12px; font-family:var(--head); font-weight:500; font-size:clamp(2rem,4.8vw,3rem); line-height:1.35; }
-.desc{ margin-top:18px; max-width:32em; color:var(--soft); font-size:1.03rem; }
+/* 라벨: 뉴욕 간판식 대문자 고딕 */
+.label{ font-family:var(--gothic); font-weight:600; font-size:.76rem; line-height:1.4; letter-spacing:.16em; text-transform:uppercase; color:var(--red); }
+.h2{ margin-top:14px; font-family:var(--serif); font-weight:400; font-size:clamp(2.3rem,5.4vw,3.6rem); line-height:1.08; letter-spacing:-.005em; }
+.ko{ margin-top:12px; font-size:.95rem; color:var(--soft); }
+.desc{ margin-top:18px; max-width:30em; color:var(--soft); font-size:1.02rem; }
 
-/* 체크 바닥 띠 (섹션 사이 얇게 한 줄) */
+/* 체크 바닥 띠 */
 .check{ height:14px; background:conic-gradient(var(--check-a) 25%, var(--check-b) 0 50%, var(--check-a) 0 75%, var(--check-b) 0) 0 0 / 28px 28px; }
 
-.btn{ display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:0 24px; border:1.5px solid var(--ink); border-radius:var(--r); font-size:.95rem; font-weight:600; transition:background .2s ease, color .2s ease, transform .15s ease; }
-.btn.fill{ background:var(--red); border-color:var(--red); color:var(--cream); }
+.btn{ display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:0 24px; border:1.5px solid var(--ink); border-radius:var(--r); font-family:var(--gothic); font-weight:600; font-size:.82rem; letter-spacing:.1em; text-transform:uppercase; transition:background .2s ease, color .2s ease, transform .15s ease; }
+.btn.fill{ background:var(--red); border-color:var(--red); color:#fff; }
 .btn:active{ transform:scale(.98); }
-@media (hover:hover){ .btn:not(.fill):hover{ background:var(--ink); color:var(--cream); } .btn.fill:hover{ background:#8C171B; border-color:#8C171B; } }
+@media (hover:hover){ .btn:not(.fill):hover{ background:var(--ink); color:var(--paper); } .btn.fill:hover{ background:#8C171B; border-color:#8C171B; } }
 
 /* 헤더 */
-.site-head{ position:sticky; top:0; z-index:50; background:rgba(244,239,231,.96); border-bottom:1px solid var(--line); }
+.site-head{ position:sticky; top:0; z-index:50; background:rgba(247,246,243,.96); border-bottom:1px solid var(--ink); }
 .site-head .wrap{ display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:64px; }
 .brand img{ width:96px; }
-.nav{ display:none; gap:28px; font-size:.95rem; }
+.nav{ display:none; gap:30px; font-family:var(--gothic); font-weight:600; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; }
 @media (min-width:900px){ .nav{ display:flex; } }
 @media (hover:hover){ .nav a:hover{ color:var(--red); } }
-.head-cta{ min-height:40px; padding:0 16px; font-size:.86rem; }
+.head-cta{ min-height:40px; padding:0 16px; font-size:.74rem; }
 @media (max-width:899px){ .head-cta{ display:none; } }
 
 /* 히어로 */
-.hero .wrap{ display:grid; gap:36px; padding:44px 0 76px; align-items:center; }
-@media (min-width:900px){ .hero .wrap{ grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:72px; padding:80px 0 120px; } }
-.hero h1{ margin-top:16px; font-family:var(--head); font-weight:500; font-size:clamp(2.5rem,6.4vw,4.2rem); line-height:1.3; }
-.hero .lead{ margin-top:22px; max-width:26em; color:var(--soft); font-size:1.05rem; }
+.hero .wrap{ display:grid; gap:36px; padding:48px 0 76px; align-items:center; }
+@media (min-width:900px){ .hero .wrap{ grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:72px; padding:84px 0 120px; } }
+.hero h1{ margin-top:18px; font-family:var(--serif); font-weight:400; font-size:clamp(3.4rem,9vw,6.2rem); line-height:.98; letter-spacing:-.01em; }
+.hero h1 em{ font-style:italic; }
+.hero .ko{ margin-top:18px; font-size:1rem; }
+.hero .lead{ margin-top:20px; max-width:27em; color:var(--soft); font-size:1.04rem; }
 .hero .cta{ display:flex; flex-wrap:wrap; gap:10px; margin-top:30px; }
 .hero figure{ margin:0; }
 .hero figure img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--r); }
 
-/* 브런치 */
-.head{ display:grid; gap:4px; margin-bottom:48px; }
+/* 섹션 머리: 위쪽 가는 먹선 (메뉴판 느낌) */
+.head{ display:grid; gap:4px; margin-bottom:48px; padding-top:22px; border-top:1px solid var(--ink); }
 @media (min-width:900px){ .head{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:end; margin-bottom:60px; } .head .desc{ margin-top:0; justify-self:end; } }
+
+/* 브런치 */
 .menu{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 14px; }
 @media (min-width:900px){ .menu{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px 24px; } }
 .menu figure{ margin:0; }
 .menu img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--r); }
-.menu figcaption{ margin-top:12px; font-weight:600; font-size:.98rem; }
+.menu figcaption{ margin-top:12px; padding-top:10px; border-top:1px solid var(--line); font-family:var(--serif); font-size:1.18rem; line-height:1.3; }
+.menu figcaption span{ display:block; margin-top:4px; font-family:var(--sans); font-size:.84rem; color:var(--soft); }
 
 /* 커피에서 술까지 */
 .drinks .wrap{ display:grid; gap:44px; align-items:center; }
@@ -121,8 +128,10 @@ h1,h2,h3,p{ margin:0; }
 .duo figure{ margin:0; }
 .duo img{ width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:var(--r); }
 .duo figure:last-child img{ aspect-ratio:3/5; }
-.pours{ display:flex; flex-wrap:wrap; gap:8px; margin-top:26px; }
-.pours span{ padding:7px 14px; border:1px solid var(--line); border-radius:var(--r); font-size:.92rem; background:var(--cream); }
+.pours{ margin:28px 0 0; padding:0; list-style:none; border-top:1px solid var(--ink); }
+.pours li{ display:flex; justify-content:space-between; align-items:baseline; gap:16px; padding:12px 0; border-bottom:1px solid var(--line); }
+.pours b{ font-family:var(--serif); font-weight:400; font-size:1.28rem; }
+.pours span{ font-size:.86rem; color:var(--soft); }
 .drinks .note{ margin-top:22px; font-size:.95rem; color:var(--soft); }
 .drinks .note b{ color:var(--ink); font-weight:600; }
 
@@ -145,30 +154,32 @@ h1,h2,h3,p{ margin:0; }
 .visit .wrap{ display:grid; gap:44px; }
 @media (min-width:900px){ .visit .wrap{ grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:72px; align-items:center; } }
 .info{ margin:28px 0 0; }
-.info div{ display:grid; grid-template-columns:76px 1fr; gap:12px; padding:15px 0; border-top:1px solid var(--line); }
+.info div{ display:grid; grid-template-columns:minmax(0,92px) minmax(0,1fr); gap:12px; padding:15px 0; border-top:1px solid var(--line); }
+.info div:first-child{ border-top-color:var(--ink); }
 .info div:last-child{ border-bottom:1px solid var(--line); }
-.info dt{ font-weight:700; }
+.info dt{ padding-top:3px; font-family:var(--gothic); font-weight:600; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; }
 .info dd{ margin:0; color:var(--soft); }
 .info dd b{ color:var(--ink); font-weight:600; }
 .info dd small{ display:block; margin-top:4px; font-size:.88rem; }
 .visit .cta{ margin-top:26px; display:flex; flex-wrap:wrap; gap:10px; }
 .visit-right{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
 .visit-right img{ width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:var(--r); }
-.map{ width:100%; height:100%; min-height:260px; border:0; border-radius:var(--r); background:var(--cream-2); }
+.map{ width:100%; height:100%; min-height:260px; border:0; border-radius:var(--r); background:var(--paper); }
 
 /* 푸터 */
-.foot{ background:var(--dark); color:var(--cream); text-align:center; padding:60px 0 calc(110px + env(safe-area-inset-bottom)); font-size:.88rem; }
+.foot{ background:var(--dark); color:var(--paper); text-align:center; padding:60px 0 calc(110px + env(safe-area-inset-bottom)); font-size:.88rem; }
 @media (min-width:900px){ .foot{ padding:76px 0; } }
 .foot img{ width:140px; margin:0 auto 18px; }
-.foot .line{ font-family:var(--head); font-weight:500; font-size:1.3rem; color:var(--amber); }
-.foot p + p{ margin-top:6px; }
-.foot .muted{ color:#BEB4A8; }
+.foot .line{ font-family:var(--serif); font-style:italic; font-size:1.7rem; line-height:1.2; color:var(--amber); }
+.foot .line-ko{ margin-top:6px; color:#BDB9B3; }
+.foot .muted{ margin-top:18px; color:#BDB9B3; }
+.foot .muted + .muted{ margin-top:6px; }
 .foot a{ text-decoration:underline; text-underline-offset:3px; }
 
 /* 모바일 하단 바 (불투명) */
-.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr); gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:var(--cream); border-top:1px solid var(--line); }
-.quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border:1.5px solid var(--ink); border-radius:var(--r); font-size:.9rem; font-weight:600; background:var(--cream); }
-.quick a.fill{ background:var(--red); border-color:var(--red); color:var(--cream); }
+.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr); gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:var(--paper); border-top:1px solid var(--ink); }
+.quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border:1.5px solid var(--ink); border-radius:var(--r); font-family:var(--gothic); font-weight:600; font-size:.76rem; letter-spacing:.1em; text-transform:uppercase; background:var(--paper); }
+.quick a.fill{ background:var(--red); border-color:var(--red); color:#fff; }
 @media (min-width:900px){ .quick{ display:none; } }
 
 /* 리빌: 사진 로드 후 페이드 (setInterval) */
@@ -182,9 +193,9 @@ h1,h2,h3,p{ margin:0; }
 <body>
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="콘띠 처음으로"><img src="cn-logo.webp" alt="contty" width="560" height="316" /></a>
-    <nav class="nav" aria-label="주요 메뉴"><a href="#brunch">브런치</a><a href="#drinks">커피와 술</a><a href="#space">공간</a><a href="#visit">오시는 길</a></nav>
-    <a class="btn fill head-cta" href="https://map.naver.com/p/entry/place/2011364242" target="_blank" rel="noopener">네이버 길찾기</a>
+    <a class="brand" href="#top" aria-label="contty home"><img src="cn-logo.webp" alt="contty" width="560" height="316" /></a>
+    <nav class="nav" aria-label="Main"><a href="#brunch">Brunch</a><a href="#drinks">Coffee &amp; Bar</a><a href="#space">The Room</a><a href="#visit">Visit</a></nav>
+    <a class="btn fill head-cta" href="https://map.naver.com/p/entry/place/2011364242" target="_blank" rel="noopener">Directions</a>
   </div>
 </header>
 
@@ -192,15 +203,16 @@ h1,h2,h3,p{ margin:0; }
   <section class="hero">
     <div class="wrap">
       <div class="reveal">
-        <p class="label">Brunch cafe &amp; bar · 2F</p>
-        <h1>빠르지 않아도<br />괜찮은 시간</h1>
-        <p class="lead">창원 가로수길 2층, 빈티지 가구와 식물, 편안한 음악이 있는 브런치 카페 &amp; 바 콘띠입니다. 천천히 즐기는 우리의 방식을 담았어요.</p>
+        <p class="label">Brunch café &amp; bar · 2F · Changwon</p>
+        <h1>Take your<br /><em>time.</em></h1>
+        <p class="ko" lang="ko">빠르지 않아도 괜찮은 시간</p>
+        <p class="lead">A second-floor brunch café and bar on Garosu-gil, Changwon. Vintage furniture, plants and easy music, from a late breakfast to a glass at night.</p>
         <div class="cta">
-          <a class="btn fill" href="https://map.naver.com/p/entry/place/2011364242" target="_blank" rel="noopener">네이버 길찾기</a>
-          <a class="btn" href="tel:050713118124">전화하기</a>
+          <a class="btn fill" href="https://map.naver.com/p/entry/place/2011364242" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn" href="tel:050713118124">Call</a>
         </div>
       </div>
-      <figure class="reveal"><img src="cn-window.webp" alt="주황 유리 조명 아래 창가 자리와 원목 의자" width="1100" height="1465" fetchpriority="high" /></figure>
+      <figure class="reveal"><img src="cn-window.webp" alt="Window seats and wooden chairs under orange glass lamps" width="1100" height="1465" fetchpriority="high" /></figure>
     </div>
   </section>
 
@@ -209,16 +221,16 @@ h1,h2,h3,p{ margin:0; }
   <section class="sec" id="brunch" aria-labelledby="brunch-h">
     <div class="wrap">
       <div class="head reveal">
-        <div><p class="label">Brunch &amp; Dessert</p><h2 id="brunch-h" class="h2">늦은 아침의 한 접시</h2></div>
-        <p class="desc">브런치와 파스타, 디저트까지. 오전 11시부터 천천히 시작하는 하루를 위해 준비해요.</p>
+        <div><p class="label">Brunch &amp; Dessert</p><h2 id="brunch-h" class="h2">Late morning plates</h2><p class="ko" lang="ko">늦은 아침의 한 접시</p></div>
+        <p class="desc">Brunch, pasta and dessert, served from 11 a.m. for days that start slowly.</p>
       </div>
       <div class="menu">
-        <figure class="reveal"><img src="cn-brunch.webp" alt="소시지, 달걀 프라이, 콩, 빵이 담긴 브런치 플레이트" width="900" height="1200" loading="lazy" /><figcaption>브런치 플레이트</figcaption></figure>
-        <figure class="reveal"><img src="cn-soup.webp" alt="하늘색 접시의 크림 수프와 빵" width="800" height="879" loading="lazy" /><figcaption>수프와 빵</figcaption></figure>
-        <figure class="reveal"><img src="cn-pasta.webp" alt="넓은 접시에 담긴 토마토 파스타" width="800" height="1067" loading="lazy" /><figcaption>토마토 파스타</figcaption></figure>
-        <figure class="reveal"><img src="cn-risotto.webp" alt="허브를 넣은 리조또 위에 고기를 올린 요리" width="800" height="1067" loading="lazy" /><figcaption>리조또</figcaption></figure>
-        <figure class="reveal"><img src="cn-cheesecake.webp" alt="크림을 곁들인 초록빛 바스크 치즈케이크" width="800" height="1061" loading="lazy" /><figcaption>바스크 치즈케이크</figcaption></figure>
-        <figure class="reveal"><img src="cn-croissant.webp" alt="쟁반에 가득 쌓인 크루아상" width="900" height="1200" loading="lazy" /><figcaption>크루아상</figcaption></figure>
+        <figure class="reveal"><img src="cn-brunch.webp" alt="Brunch plate with sausage, fried egg, beans and bread" width="900" height="1200" loading="lazy" /><figcaption>Brunch plate<span lang="ko">브런치 플레이트</span></figcaption></figure>
+        <figure class="reveal"><img src="cn-soup.webp" alt="Cream soup and bread on a light blue plate" width="800" height="879" loading="lazy" /><figcaption>Soup &amp; bread<span lang="ko">수프와 빵</span></figcaption></figure>
+        <figure class="reveal"><img src="cn-pasta.webp" alt="Tomato pasta on a wide plate" width="800" height="1067" loading="lazy" /><figcaption>Tomato pasta<span lang="ko">토마토 파스타</span></figcaption></figure>
+        <figure class="reveal"><img src="cn-risotto.webp" alt="Herb risotto topped with meat" width="800" height="1067" loading="lazy" /><figcaption>Risotto<span lang="ko">리조또</span></figcaption></figure>
+        <figure class="reveal"><img src="cn-cheesecake.webp" alt="Basque cheesecake with cream" width="800" height="1061" loading="lazy" /><figcaption>Basque cheesecake<span lang="ko">바스크 치즈케이크</span></figcaption></figure>
+        <figure class="reveal"><img src="cn-croissant.webp" alt="A tray piled with croissants" width="900" height="1200" loading="lazy" /><figcaption>Croissants<span lang="ko">크루아상</span></figcaption></figure>
       </div>
     </div>
   </section>
@@ -226,15 +238,21 @@ h1,h2,h3,p{ margin:0; }
   <section class="sec alt drinks" id="drinks" aria-labelledby="drinks-h">
     <div class="wrap">
       <div class="duo">
-        <figure class="reveal"><img src="cn-bottles.webp" alt="조명이 켜진 원목 선반에 줄지어 선 술병" width="900" height="1200" loading="lazy" /></figure>
-        <figure class="reveal"><img src="cn-counter.webp" alt="주황 조명이 걸린 카운터와 창가" width="900" height="1199" loading="lazy" /></figure>
+        <figure class="reveal"><img src="cn-bottles.webp" alt="Bottles lined up on a lit wooden shelf" width="900" height="1200" loading="lazy" /></figure>
+        <figure class="reveal"><img src="cn-counter.webp" alt="Counter and window under an orange lamp" width="900" height="1199" loading="lazy" /></figure>
       </div>
       <div class="reveal">
-        <p class="label">From coffee to a glass</p>
-        <h2 id="drinks-h" class="h2">커피에서 와인,<br />전통주까지</h2>
-        <p class="desc">contty는 익숙한 한식을 새롭게 해석한 공간입니다. 커피와 와인, 브랜디와 전통주까지 자연스럽게 이어지는 경험을 제안합니다.</p>
-        <div class="pours"><span>Coffee</span><span>Wine</span><span>Brandy</span><span>전통주</span></div>
-        <p class="note"><b>밤 11시까지</b> 열어요. 라스트오더는 밤 10시예요.</p>
+        <p class="label">Coffee &amp; Bar</p>
+        <h2 id="drinks-h" class="h2">From coffee<br />to a glass</h2>
+        <p class="ko" lang="ko">커피에서 와인, 전통주까지</p>
+        <p class="desc">contty gives familiar Korean flavors a new take. Coffee, wine, brandy and traditional Korean spirits, flowing naturally from one to the next.</p>
+        <ul class="pours">
+          <li><b>Coffee</b><span lang="ko">커피</span></li>
+          <li><b>Wine</b><span lang="ko">와인</span></li>
+          <li><b>Brandy</b><span lang="ko">브랜디</span></li>
+          <li><b>Korean spirits</b><span lang="ko">전통주</span></li>
+        </ul>
+        <p class="note">Open <b>until 11 p.m.</b> · Last order 10 p.m.</p>
       </div>
     </div>
   </section>
@@ -242,15 +260,15 @@ h1,h2,h3,p{ margin:0; }
   <section class="sec" id="space" aria-labelledby="space-h">
     <div class="wrap">
       <div class="head reveal">
-        <div><p class="label">Vintage, plants &amp; music</p><h2 id="space-h" class="h2">가로수길의 아늑한 2층</h2></div>
-        <p class="desc">편안한 음악과 빈티지 가구, 식물이 어우러진 공간에서 가로수길의 아늑한 느낌을 함께 경험해 보세요.</p>
+        <div><p class="label">Vintage, plants &amp; music</p><h2 id="space-h" class="h2">Upstairs on Garosu-gil</h2><p class="ko" lang="ko">가로수길의 아늑한 2층</p></div>
+        <p class="desc">Easy music, vintage furniture and plants. A cozy room one floor above the street.</p>
       </div>
       <div class="space-grid">
-        <figure class="a reveal"><img src="cn-bar.webp" alt="거리 쪽 긴 창을 따라 놓인 바 좌석과 체크 바닥" width="1200" height="1600" loading="lazy" /></figure>
-        <figure class="b reveal"><img src="cn-sofa.webp" alt="검은 가죽 소파와 원목 테이블, 빨간 체크 러그" width="900" height="1200" loading="lazy" /></figure>
-        <figure class="c reveal"><img src="cn-audio.webp" alt="화분 옆 빈티지 오디오와 둥근 스피커" width="800" height="1067" loading="lazy" /></figure>
-        <figure class="d reveal"><img src="cn-plants.webp" alt="체크 바닥 위 화분들이 놓인 창가 구석" width="800" height="1067" loading="lazy" /></figure>
-        <figure class="e reveal"><img src="cn-room.webp" alt="둥근 조명 아래 긴 테이블이 놓인 방" width="900" height="1200" loading="lazy" /></figure>
+        <figure class="a reveal"><img src="cn-bar.webp" alt="Bar seats along the long street-side window and a checkered floor" width="1200" height="1600" loading="lazy" /></figure>
+        <figure class="b reveal"><img src="cn-sofa.webp" alt="Black leather sofa, wooden table and a red checked rug" width="900" height="1200" loading="lazy" /></figure>
+        <figure class="c reveal"><img src="cn-audio.webp" alt="Vintage audio and round speakers beside plants" width="800" height="1067" loading="lazy" /></figure>
+        <figure class="d reveal"><img src="cn-plants.webp" alt="Potted plants in a window corner on the checkered floor" width="800" height="1067" loading="lazy" /></figure>
+        <figure class="e reveal"><img src="cn-room.webp" alt="A long table under round lamps" width="900" height="1200" loading="lazy" /></figure>
       </div>
     </div>
   </section>
@@ -260,22 +278,23 @@ h1,h2,h3,p{ margin:0; }
   <section class="sec alt visit" id="visit" aria-labelledby="visit-h">
     <div class="wrap">
       <div class="reveal">
-        <p class="label">Find us on the 2nd floor</p>
-        <h2 id="visit-h" class="h2">오시는 길</h2>
+        <p class="label">Find us · 2F</p>
+        <h2 id="visit-h" class="h2">Visit</h2>
+        <p class="ko" lang="ko">오시는 길</p>
         <dl class="info">
-          <div><dt>주소</dt><dd><b>경남 창원시 성산구 창이대로460번길 13 202호</b><small>이탈리아 퀴진 라타나 건물 2층</small></dd></div>
-          <div><dt>찾는 법</dt><dd>입구 간판에 <b>notag dept</b>가 보이면 그 입구로 들어와 2층으로 올라오세요.<small>콘띠샵도 같은 2층에 있어요.</small></dd></div>
-          <div><dt>영업</dt><dd><b>11:00 ~ 23:00</b> · 라스트오더 22:00<small>매주 화요일 정기휴무</small></dd></div>
-          <div><dt>전화</dt><dd><a href="tel:050713118124"><b>0507-1311-8124</b></a></dd></div>
+          <div><dt>Address</dt><dd lang="ko"><b>경남 창원시 성산구 창이대로460번길 13 202호</b><small>이탈리아 퀴진 라타나 건물 2층</small></dd></div>
+          <div><dt>Finding us</dt><dd>Look for the <b>notag dept</b> sign at the entrance and head up to the 2nd floor.<small lang="ko">입구 notag dept 간판 → 2층 · 콘띠샵도 같은 층이에요.</small></dd></div>
+          <div><dt>Hours</dt><dd><b>11:00 – 23:00</b> · Last order 22:00<small>Closed Tuesdays <span lang="ko">· 매주 화요일 휴무</span></small></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:050713118124"><b>0507-1311-8124</b></a></dd></div>
         </dl>
         <div class="cta">
-          <a class="btn fill" href="https://map.naver.com/p/entry/place/2011364242" target="_blank" rel="noopener">네이버 길찾기</a>
-          <a class="btn" href="https://www.instagram.com/contty.ch.2f/" target="_blank" rel="noopener">인스타그램</a>
+          <a class="btn fill" href="https://map.naver.com/p/entry/place/2011364242" target="_blank" rel="noopener">Naver Map</a>
+          <a class="btn" href="https://www.instagram.com/contty.ch.2f/" target="_blank" rel="noopener">Instagram</a>
         </div>
       </div>
       <div class="visit-right reveal">
-        <img src="cn-sign.webp" alt="입구 앞 contty 입간판: brunch cafe &amp; bar, 2f" width="800" height="1067" loading="lazy" />
-        <iframe class="map" title="콘띠 위치 지도" src="https://www.google.com/maps?q=%EA%B2%BD%EB%82%A8%20%EC%B0%BD%EC%9B%90%EC%8B%9C%20%EC%84%B1%EC%82%B0%EA%B5%AC%20%EC%B0%BD%EC%9D%B4%EB%8C%80%EB%A1%9C460%EB%B2%88%EA%B8%B8%2013&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <img src="cn-sign.webp" alt="contty sandwich board at the entrance: brunch cafe &amp; bar, 2f" width="800" height="1067" loading="lazy" />
+        <iframe class="map" title="Map to contty" src="https://www.google.com/maps?q=%EA%B2%BD%EB%82%A8%20%EC%B0%BD%EC%9B%90%EC%8B%9C%20%EC%84%B1%EC%82%B0%EA%B5%AC%20%EC%B0%BD%EC%9D%B4%EB%8C%80%EB%A1%9C460%EB%B2%88%EA%B8%B8%2013&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
@@ -284,16 +303,17 @@ h1,h2,h3,p{ margin:0; }
 <footer class="foot">
   <div class="wrap">
     <img src="cn-logo-c.webp" alt="" width="560" height="316" loading="lazy" />
-    <p class="line">빠르지 않아도 괜찮은 시간</p>
-    <p class="muted">경남 창원시 성산구 창이대로460번길 13 202호 · 0507-1311-8124 · <a href="https://www.instagram.com/contty.ch.2f/" target="_blank" rel="noopener">@contty.ch.2f</a></p>
+    <p class="line">Take your time.</p>
+    <p class="line-ko" lang="ko">빠르지 않아도 괜찮은 시간</p>
+    <p class="muted"><span lang="ko">경남 창원시 성산구 창이대로460번길 13 202호</span> · 0507-1311-8124 · <a href="https://www.instagram.com/contty.ch.2f/" target="_blank" rel="noopener">@contty.ch.2f</a></p>
     <p class="muted">© contty</p>
   </div>
 </footer>
 
-<div class="quick" aria-label="빠른 연결">
-  <a class="fill" href="https://map.naver.com/p/entry/place/2011364242" target="_blank" rel="noopener">길찾기</a>
-  <a href="tel:050713118124">전화</a>
-  <a href="https://www.instagram.com/contty.ch.2f/" target="_blank" rel="noopener">인스타</a>
+<div class="quick" aria-label="Quick links">
+  <a class="fill" href="https://map.naver.com/p/entry/place/2011364242" target="_blank" rel="noopener">Directions</a>
+  <a href="tel:050713118124">Call</a>
+  <a href="https://www.instagram.com/contty.ch.2f/" target="_blank" rel="noopener">Instagram</a>
 </div>
 
 <script>
